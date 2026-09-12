@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuickFix PC Bandarawela — Mobile PC Repair, Bandarawela &amp; Diyathalawa</title>
+<meta name="description" content="Friendly, honest PC care that comes to your door. Serving Bandarawela and Diyathalawa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #EDF2E9;
+    --card: #FFFFFF;
+    --ink: #1F2E23;
+    --ink-soft: #45564A;
+    --ochre: #C97A2B;
+    --teal: #3B6B5A;
+    --line: #D3DECB;
+    --max: 720px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Karla', sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    line-height: 1.15;
+    margin: 0;
+    color: var(--ink);
+  }
+
+  a { color: inherit; }
+
+  .wrap {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  header {
+    padding: 24px 0 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .wordmark {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 24px 18px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0 8px;
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+  }
+
+  .brand-name {
+    font-size: 21px;
+    white-space: nowrap;
+  }
+
+  .brand-loc {
+    font-size: 15px;
+    color: var(--teal);
+    white-space: nowrap;
+  }
+
+  nav {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    font-family: 'Karla', sans-serif;
+    font-size: 14.5px;
+    text-decoration: none;
+    color: var(--ink-soft);
+  }
+
+  .hero {
+    padding: 56px 0 56px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .hero .kicker {
+    font-size: 15px;
+    color: var(--teal);
+    margin-bottom: 14px;
+  }
+
+  .hero h1 {
+    font-size: 46px;
+    letter-spacing: -0.01em;
+    max-width: 11ch;
+  }
+
+  .hero p.lede {
+    margin-top: 22px;
+    font-size: 19px;
+    color: var(--ink-soft);
+    max-width: 42ch;
+  }
+
+  .hero-actions {
+    margin-top: 32px;
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    border: 1px solid transparent;
+  }
+
+  .btn-primary {
+    background: var(--ochre);
+    color: #fff;
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--ink);
+    border-color: var(--ink);
+  }
+
+  .hero-meta {
+    margin-top: 28px;
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+
+  section {
+    padding: 56px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  section:last-of-type { border-bottom: none; }
+
+  .section-head { margin-bottom: 36px; }
+
+  .section-head h2 {
+    font-size: 28px;
+  }
+
+  .section-head p {
+    margin-top: 10px;
+    color: var(--ink-soft);
+    max-width: 46ch;
+  }
+
+  .services {
+    display: grid;
+    gap: 16px;
+  }
+
+  .service {
+    border: 1px solid var(--line);
+    background: var(--card);
+    padding: 24px 26px;
+  }
+
+  .service-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .service-top h3 {
+    font-size: 20px;
+  }
+
+  .price {
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    color: var(--teal);
+    white-space: nowrap;
+  }
+
+  .service p {
+    margin-top: 10px;
+    color: var(--ink-soft);
+    font-size: 15.5px;
+  }
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .step {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .step:last-child { padding-bottom: 0; }
+
+  .step-num {
+    font-family: 'Fraunces', serif;
+    font-size: 15px;
+    color: var(--ochre);
+    padding-top: 2px;
+    flex-shrink: 0;
+    width: 22px;
+  }
+
+  .step h3 {
+    font-size: 17px;
+    margin-bottom: 4px;
+  }
+
+  .step p {
+    color: var(--ink-soft);
+    font-size: 15.5px;
+    margin: 0;
+  }
+
+  .area-list {
+    margin-top: 8px;
+    color: var(--ink-soft);
+  }
+
+  .promise {
+    margin-top: 20px;
+    padding: 18px 20px;
+    background: var(--card);
+    border-left: 3px solid var(--teal);
+    font-size: 15.5px;
+    color: var(--ink-soft);
+  }
+
+  .contact {
+    text-align: left;
+  }
+
+  .contact h2 { font-size: 30px; max-width: 14ch; }
+
+  .contact p.lede {
+    margin-top: 14px;
+    color: var(--ink-soft);
+    font-size: 17px;
+    max-width: 44ch;
+  }
+
+  .contact .hero-actions { margin-top: 28px; }
+
+  footer {
+    padding: 32px 0 48px;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+  }
+
+  @media (max-width: 560px) {
+    .hero { padding: 40px 0 36px; }
+    .hero h1 { font-size: 32px; max-width: none; }
+    .wordmark { padding: 0 20px 16px; gap: 12px; }
+    .brand-name { font-size: 19px; }
+    .brand-loc { font-size: 14px; }
+    nav { gap: 14px; }
+    nav a { font-size: 13.5px; }
+    .section-head h2 { font-size: 24px; }
+    .contact h2 { font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wordmark">
+    <div class="brand">
+      <span class="brand-name">QuickFix PC</span>
+      <span class="brand-loc">Bandarawela</span>
+    </div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap hero">
+  <div class="kicker">Bandarawela &amp; Diyathalawa</div>
+  <h1>Your PC, fixed without leaving home.</h1>
+  <p class="lede">Slow, cluttered, or acting up? I come to you — clean install, speed-up, or a full check-up, done right at your desk.</p>
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="#contact">Book a visit</a>
+    <a class="btn btn-secondary" href="#services">See prices</a>
+  </div>
+  <div class="hero-meta">Usually available same week &middot; No PC leaves your house</div>
+</div>
+
+<div class="wrap">
+  <section id="services">
+    <div class="section-head">
+      <h2>Pick what your PC needs</h2>
+      <p>Straightforward pricing, no surprise add-ons. Every visit includes a quick chat about what's actually wrong before any work starts.</p>
+    </div>
+    <div class="services">
+      <div class="service">
+        <div class="service-top">
+          <h3>Speed-Up &amp; Clean</h3>
+          <div class="price">Rs. 2,500 &ndash; 3,500</div>
+        </div>
+        <p>Remove junk and startup clutter, clear out malware, free up disk space, and get your current Windows running noticeably faster. No reinstall needed.</p>
+      </div>
+      <div class="service">
+        <div class="service-top">
+          <h3>Fresh Windows Install</h3>
+          <div class="price">Rs. 4,000 &ndash; 6,000</div>
+        </div>
+        <p>A clean Windows install with all drivers set up properly, plus your essentials — browser, office apps, antivirus. Your files backed up and restored, guaranteed.</p>
+      </div>
+      <div class="service">
+        <div class="service-top">
+          <h3>Full Health Check + Install</h3>
+          <div class="price">Rs. 6,000 &ndash; 8,000</div>
+        </div>
+        <p>Everything above, plus a hardware check, internal cleaning, and honest advice on whether an SSD upgrade is worth it. Includes a follow-up call a week later.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="section-head">
+      <h2>How it works</h2>
+      <p>Four steps, start to finish. Most visits are wrapped up the same day.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div>
+          <h3>Message me</h3>
+          <p>Tell me what's going on with your PC over WhatsApp — a photo or short video helps if you can send one.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div>
+          <h3>We schedule a visit</h3>
+          <p>Pick a time that works for you. I'll confirm the service and price before I arrive — no guessing.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div>
+          <h3>I fix it at your place</h3>
+          <p>Your PC stays with you the whole time. I'll walk you through what I'm doing if you're curious.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div>
+          <h3>Backup guaranteed</h3>
+          <p>Your photos, documents, and files are always backed up before any reinstall. Nothing gets lost.</p>
+        </div>
+      </div>
+    </div>
+    <div class="promise">I personally back up your data before every install — that step never gets skipped, even if it takes extra time.</div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Let's get your PC sorted</h2>
+    <p class="lede">Message me on WhatsApp with what's wrong and where you're located — I'll get back to you the same day.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="https://wa.me/94XXXXXXXXX" target="_blank" rel="noopener">Message on WhatsApp</a>
+      <a class="btn btn-secondary" href="#services">Compare services</a>
+    </div>
+    <p class="area-list">Currently serving homes and small offices in Bandarawela and Diyathalawa.</p>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">QuickFix PC Bandarawela &middot; Bandarawela &amp; Diyathalawa</div>
+</footer>
+
+</body>
+</html>
